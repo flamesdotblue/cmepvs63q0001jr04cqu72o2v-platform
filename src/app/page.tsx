@@ -7,8 +7,12 @@ export default function Page() {
   const stats = [
     { label: 'Batting Average', value: '.356', accent: 'yellow' as const },
     { label: 'Home Runs', value: '42', accent: 'pink' as const },
-    { label: 'RBIs', value: '108', accent: 'blue' as const },
-    { label: 'OPS', value: '1.012', accent: 'lime' as const }
+    { label: 'RBIs', value: '108', accent: 'purple' as const },
+    { label: 'OPS', value: '1.012', accent: 'teal' as const },
+    { label: 'Stolen Bases', value: '31', accent: 'cyan' as const },
+    { label: 'Slugging', value: '.592', accent: 'violet' as const },
+    { label: 'OBP', value: '.420', accent: 'mint' as const },
+    { label: 'War', value: '7.1', accent: 'orange' as const }
   ]
 
   const schedule = [
@@ -24,9 +28,9 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-6 items-stretch">
           <div className="nb-card p-6 md:p-8 bg-nbYellow">
             <div className="flex items-center gap-3 mb-4">
-              <Badge>MVP 2025</Badge>
-              <Badge>All‑Star</Badge>
-              <Badge>Lefty Slugger</Badge>
+              <Badge color="violet">MVP 2025</Badge>
+              <Badge color="teal">All‑Star</Badge>
+              <Badge color="red">Lefty Slugger</Badge>
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold leading-[0.95] tracking-tight">
               Kitty ‘Slugger’ Paws
@@ -42,7 +46,7 @@ export default function Page() {
           </div>
           <div className="nb-card overflow-hidden relative min-h-[320px] bg-white">
             <Image
-              src="https://images.unsplash.com/photo-1553460378-2ea9de85c6f6?q=80&w=1600&auto=format&fit=crop"
+              src="https://picsum.photos/seed/kitty-hero/1600/1200"
               alt="Kitty swinging a bat in neo‑brutal collage style"
               fill
               className="object-cover object-center"
@@ -61,11 +65,11 @@ export default function Page() {
             <div className="text-xs uppercase opacity-80 font-bold">Bats / Throws</div>
             <div className="text-2xl font-extrabold">L / L</div>
           </div>
-          <div className="nb-card p-4 bg-nbPink">
+          <div className="nb-card p-4 bg-nbPurple">
             <div className="text-xs uppercase opacity-80 font-bold">Speed</div>
             <div className="text-2xl font-extrabold">9.6/10</div>
           </div>
-          <div className="nb-card p-4 bg-nbYellow">
+          <div className="nb-card p-4 bg-nbTeal">
             <div className="text-xs uppercase opacity-80 font-bold">Arm</div>
             <div className="text-2xl font-extrabold">Elite</div>
           </div>
@@ -86,25 +90,25 @@ export default function Page() {
       <section id="highlights" className="container-nb py-10 md:py-14">
         <h2 className="section-title mb-6">Highlights</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <div className="nb-card overflow-hidden relative h-64">
+          <div className="nb-card overflow-hidden relative h-64 bg-nbMint">
             <Image
-              src="https://images.unsplash.com/photo-1601582585289-7b91a44a8db2?q=80&w=1600&auto=format&fit=crop"
+              src="https://picsum.photos/seed/glove-clip/1200/800"
               alt="Baseball glove and ball close‑up"
               fill
               className="object-cover"
             />
           </div>
-          <div className="nb-card overflow-hidden relative h-64">
+          <div className="nb-card overflow-hidden relative h-64 bg-nbCyan">
             <Image
-              src="https://images.unsplash.com/photo-1627905640636-9da3dc142b2e?q=80&w=1600&auto=format&fit=crop"
+              src="https://picsum.photos/seed/lights-dusk/1200/800"
               alt="Stadium lights at dusk"
               fill
               className="object-cover"
             />
           </div>
-          <div className="nb-card overflow-hidden relative h-64">
+          <div className="nb-card overflow-hidden relative h-64 bg-nbViolet">
             <Image
-              src="https://images.unsplash.com/photo-1617634667039-8a714314ee77?q=80&w=1600&auto=format&fit=crop"
+              src="https://picsum.photos/seed/infield-dirt/1200/800"
               alt="Base path and infield dirt"
               fill
               className="object-cover"
@@ -136,7 +140,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="container-nb pb-14">
-        <div className="nb-card p-5 flex flex-col md:flex-row items-center justify-between gap-4 bg-nbOrange">
+        <div className="nb-card p-5 flex flex-col md:flex-row items-center justify-between gap-4 bg-nbRed">
           <div className="text-center md:text-left">
             <div className="text-2xl font-extrabold">Book Kitty for an appearance</div>
             <div className="opacity-80">Media, signings, or charity games — let’s make it legendary.</div>

@@ -14,7 +14,13 @@ export default {
         nbPink: '#FF8FAB',
         nbBlue: '#00D1FF',
         nbLime: '#C6FF00',
-        nbOrange: '#FF7A00'
+        nbOrange: '#FF7A00',
+        nbPurple: '#A78BFA',
+        nbTeal: '#14B8A6',
+        nbRed: '#FF3B3B',
+        nbMint: '#98FF98',
+        nbCyan: '#22D3EE',
+        nbViolet: '#7C3AED'
       },
       boxShadow: {
         nb: '6px 6px 0 0 #111111',

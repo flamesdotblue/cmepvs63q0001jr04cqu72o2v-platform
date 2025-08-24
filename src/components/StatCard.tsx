@@ -1,15 +1,21 @@
 type Props = {
   label: string
   value: string
-  accent?: 'yellow' | 'pink' | 'blue' | 'lime' | 'orange'
+  accent?: 'yellow' | 'pink' | 'blue' | 'lime' | 'orange' | 'purple' | 'teal' | 'red' | 'mint' | 'cyan' | 'violet'
 }
 
-const accentMap = {
+const accentMap: Record<NonNullable<Props['accent']>, string> = {
   yellow: 'bg-nbYellow',
   pink: 'bg-nbPink',
   blue: 'bg-nbBlue',
   lime: 'bg-nbLime',
-  orange: 'bg-nbOrange'
+  orange: 'bg-nbOrange',
+  purple: 'bg-nbPurple',
+  teal: 'bg-nbTeal',
+  red: 'bg-nbRed',
+  mint: 'bg-nbMint',
+  cyan: 'bg-nbCyan',
+  violet: 'bg-nbViolet'
 }
 
 export default function StatCard({ label, value, accent = 'blue' }: Props) {
