@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #111111;
+}
+
+html, body {
+  background: theme('colors.nbBg');
+  color: var(--ink);
+}
+
+.nb-card {
+  @apply border-3 border-black bg-white shadow-nb rounded-xl;
+}
+
+.nb-btn {
+  @apply inline-flex items-center justify-center border-3 border-black shadow-nb rounded-xl px-5 py-3 font-bold transition-transform hover:-translate-y-0.5 active:translate-y-0 bg-nbYellow;
+}
+
+.nb-chip {
+  @apply border-3 border-black rounded-full px-3 py-1 text-sm bg-white shadow-nbSm;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-extrabold tracking-tight;
+}
+
+.container-nb {
+  @apply max-w-6xl mx-auto px-4 md:px-6;
+}
